@@ -348,7 +348,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player" playsinline="" controls clickToPlay="true" loop data-poster="images/greentest.png" style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestMedium-Green.mp4" type="video/mp4" size="1080">
 						<!-- Captions are optional -->
 					</video>
@@ -359,7 +359,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player2" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player2" playsinline="" controls clickToPlay="true" loop data-poster="images/bluetest.png" style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestMedium-Blue.mp4" type="video/mp4" size="1080">
 						
 					</video>
@@ -373,7 +373,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 		
 		<div>
 			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 0.1vw;">Here are some videos of the train moving.</p>
-			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">Taken from a fixed point, they are set to loop.</p>
+			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">Taken from a fixed point.</p>
 		</div>
 		
 		
@@ -382,7 +382,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player3" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player3" playsinline="" controls clickToPlay="true"  data-poster="images/greenvalley.png" style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestValley-Green.mp4" type="video/mp4" size="1080">
 						<!-- Captions are optional -->
 					</video>
@@ -393,7 +393,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player4" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player4" playsinline="" controls clickToPlay="true"  data-poster="images/bluevalley.png" style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestValley-Blue.mp4" type="video/mp4" size="1080">
 						
 					</video>
@@ -406,7 +406,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 		
 		<div>
 			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">Here are some more videos of the train moving.</p>
-			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">shown from the side. They are slightly longer. and are also set to loop</p>
+			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">shown from the side. They are slightly longer.</p>
 		</div>
 		
 		<!--
@@ -439,7 +439,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player7" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player7" playsinline="" controls clickToPlay="true" data-poster="images/greentest.png"  style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestLong-Green.mp4" type="video/mp4" size="1080">
 						<!-- Captions are optional -->
 					</video>
@@ -450,7 +450,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			<div class="column2">
 				<div class="video-container">
 
-					<video id="player8" playsinline="" controls clickToPlay="true" loop  style="--plyr-color-main: #00cccc;">
+					<video id="player8" playsinline="" controls clickToPlay="true" data-poster="images/bluetest.png"  style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestLong-Blue.mp4" type="video/mp4" size="1080">
 						
 					</video>
@@ -495,7 +495,6 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
   //'volume', // Volume control
   
   //'settings', // Settings menu
-  
   
   
   'fullscreen', // Toggle fullscreen
@@ -555,7 +554,7 @@ volume:'0',
 
 loadSprite:false,
 volume:'0',
-
+resetOnEnd:true
 
 
 });
@@ -581,7 +580,7 @@ volume:'0',
 
 loadSprite:false,
 volume:'0',
-
+resetOnEnd:true
 
 
 });
@@ -608,7 +607,7 @@ volume:'0',
 loadSprite:false,
 volume:'0',
 
-
+resetOnEnd:true
 
 });
 
@@ -634,7 +633,7 @@ volume:'0',
 loadSprite:false,
 volume:'0',
 
-
+resetOnEnd:true
 
 });
 
@@ -660,7 +659,7 @@ volume:'0',
 loadSprite:false,
 volume:'0',
 
-
+resetOnEnd:true
 
 });
 
@@ -686,7 +685,7 @@ volume:'0',
 loadSprite:false,
 volume:'0',
 
-
+resetOnEnd:true
 
 });
 
