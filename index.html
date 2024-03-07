@@ -7,12 +7,13 @@
 	<title>Ethan Stockton</title>
 	<link rel="icon" href="images/EthanStudiosLogo2.ico">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	
-<script src="3.7.8_plyr.js"></script>
+
+<script src="3.7.8_plyr.js" async></script>
 <link rel="stylesheet" href="3.7.8_plyr.css" />
 
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
+	<meta name="viewport">
+	
 	<style>
 		
     .test1 {
@@ -419,11 +420,12 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 		</div>
 		
 		
-		
+		<!--
 		<div>
 			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">Here are some more videos of the train moving.</p>
 			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 1vw;">shown from the side. They are slightly longer.</p>
 		</div>
+		-->
 		
 		<!--
 		<div class="row">
@@ -450,14 +452,14 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			</div>
 		</div>
 		-->
-		
+		<!--
 		<div class="row">
 			<div class="column2">
 				<div class="video-container">
 
 					<video id="player7" playsinline="" controls clickToPlay="true" data-poster="images/greentest-hq.png"  style="--plyr-color-main: #00cccc;">
 						<source src="https://cdnuk1.ethanstockton.com/traintest1/TrainGameTestLong-Green.mp4" type="video/mp4" size="1080">
-						<!-- Captions are optional -->
+						
 					</video>
 
 				</div>
@@ -474,7 +476,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 				</div>
 			</div>
 		</div>
-		
+		-->
 
 		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:3vw;line-height:0.1em;">
 			<u>
@@ -523,6 +525,8 @@ volume:'0',
 
 });
 
+</script>
+<script>
 
   const player2 = new Plyr('#player2', {
 	controls: [
@@ -548,6 +552,9 @@ volume:'0',
 
 
 });
+
+</script>
+<script>
 
   const player3 = new Plyr('#player3', {
 	controls: [
@@ -575,7 +582,10 @@ resetOnEnd:true
 
 });
 
-  const player4 = new Plyr('#player4', {
+ </script>
+<script>
+
+ const player4 = new Plyr('#player4', {
 	controls: [
   'play-large', // The large play button in the center
   
@@ -600,6 +610,9 @@ resetOnEnd:true
 
 
 });
+
+</script>
+<script>
 
 /*
  const player5 = new Plyr('#player5', {
@@ -654,7 +667,7 @@ resetOnEnd:true
 
 });
 */
-
+/*
  const player7 = new Plyr('#player7', {
 	controls: [
   'play-large', // The large play button in the center
@@ -706,7 +719,7 @@ volume:'0',
 resetOnEnd:true
 
 });
-
+*/
 
 if(window.location.protocol == 'http:') {
 			location.href =   location.href.replace("http://", "https://");
