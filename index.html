@@ -6,6 +6,7 @@
 <head>
 	<title>Ethan Stockton</title>
 	<link rel="icon" href="images/EthanStudiosLogo2.ico">
+		<link rel="preload" href="acosta-webfont.woff2" as="font" type="font/woff2">
 	<link href="style.css" rel="stylesheet" type="text/css">
 
 <script src="3.7.8_plyr.js"></script>
@@ -15,7 +16,15 @@
 
 	
 	<style>
-		
+		@font-face {
+    font-family: 'acostaregular';
+    src: url('acosta-webfont.woff2') format('woff2'),
+         url('acosta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
     .test1 {
     background: rgba(211, 60, 60,0);
     background-repeat:no-repeat;
@@ -56,14 +65,7 @@
 			}
     }
 	
-	@font-face {
-    font-family: 'acostaregular';
-    src: url('acosta-webfont.woff2') format('woff2'),
-         url('acosta-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+	
 
 
 .row {
