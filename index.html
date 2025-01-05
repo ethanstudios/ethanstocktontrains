@@ -6,27 +6,27 @@
 <head>
 	<title>Ethan Stockton</title>
 	
+    <meta property="og:site_name" content="Ethan Stockton" />
+    <meta property="og:title" content="Ethan Stockton" />
 
-  <meta property="og:site_name" content="Ethan Stockton" />
-  <meta property="og:title" content="Ethan's Train Game" />
-
-    <meta property="og:description" content="The Train Game prototype is now available to play." />
+    <meta property="og:description" content="Welcome to my website. Where you can play my Train Game Prototype" />
 
     <meta property="og:type" content="website" />
 
-    <meta property="og:image" content="https://trains.ethanstockton.com/images/greenvalley-hq.png" />
-    <meta property="og:image:secure_url" content="https://trains.ethanstockton.com/images/greenvalley-hq.png" />
+    <meta property="og:image" content="https://ethanstockton.com/images/EthanStockton-Compressed-Medium-2.png" />
+	<meta property="og:image:secure_url" content="https://ethanstockton.com/images/EthanStockton-Compressed-Medium-2.png" />
 
-    <meta property="og:url" content="https://trains.ethanstockton.com/" />
-
+	<meta property="og:url" content="https://trains.ethanstockton.com/" />
 	
+	<link rel="icon" href="images/EthanStudiosLogo7.ico">
 	
-	<link rel="icon" href="images/EthanStudiosLogo2.ico">
 	<!--<link rel="preload" href="acosta-webfont.woff2" as="font" type="font/woff2" crossorigin>-->
 	<link rel="preload" href="Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!--<link href="style.css" rel="stylesheet" type="text/css">-->
-
+<link href="bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+	
 <script src="3.7.8_plyr.js"></script>
 <link rel="stylesheet" href="3.7.8_plyr.css" />
 
@@ -39,7 +39,46 @@
 
 	
 	<style>
-	#header{font-family:'arial';background:#00000000; text-align:center}
+	
+
+
+		.btn-custom , .btn.btn-custom:focus{
+			color: #ffffff;
+			background-color: #000000;
+			border-color: #000000; /*set the color you want here*/
+			transition: 0.0s;
+		}
+		.btn.btn-custom:hover {
+			color: #000000;
+			background-color: #ffffff;
+			border-color: #ffffff; /*set the color you want here*/
+			transition: 0.0s;
+		}
+		
+
+
+		@font-face {
+			font-family: 'Runtoe';
+
+			font-weight: normal;
+			font-style: normal;
+			src: url('Runtoe.woff2') format('woff2');
+
+
+		}
+
+		.b-example-divider {
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+	
+	
+	
+	#headertitle{font-family:'arial';background:#00000000; text-align:center}
 html {
   height: 100%;
   margin: 0;
@@ -193,6 +232,7 @@ line-height: 1.5rem;
    width: 100%;
    font-size:5vw;
    
+   margin: 50px
 }
 
 .titlecenter2 {
@@ -238,10 +278,58 @@ line-height: 1.5rem;
 <!--
   THIS CODE IS PROPERTY OF ETHAN STOCKTON
   -->
-  <div class="background-image"> </div>
-  <div class="background-image-cover"> </div>
   
-<body id="body">
+  
+<body id="body" style= "background-color:rgba(0, 0, 0, 0.0);">
+
+
+
+<header 
+		class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between  border-bottom border-white border-2 mb-0 py-0" style="background-color:rgba(0, 0, 0, 1.0);">
+		<div class="col-md-3 mb-0 mb-md-0 py-0 d-none d-md-block">
+			<a href="https://ethanstockton.com" class="d-inline-flex link-body-emphasis">
+				<img class="" width="240" src="images/EthanStockton-Compressed-Small.png">
+			</a>
+		</div>
+
+		<!-- For medium and larger screens -->
+		<ul class="nav col-md-auto mb-0 justify-content-center mb-md-0 py-0">
+
+			<li><a href="https://ethanstockton.com" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Home</a></li>
+					
+			<li><a href="https://ethanstockton.com/#Photos" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Photos</a></li>
+					
+			<li><a href="https://ethanstockton.com/#Games" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Games</a></li>
+
+			<!-- For smaller screens -->
+
+			<li><a href="https://ethanstockton.com" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Home</a></li>
+					
+			<li><a href="https://ethanstockton.com/#Photos" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Photos</a></li>
+					
+			<li><a href="https://ethanstockton.com/#Games" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Games</a></li>
+
+		</ul>
+
+
+
+		<div class="col-md-3 text-end mb-0 mb-md-0 py-0">
+
+		</div>
+		
+	</header>
+	
+
+<div class="background-image"> </div>
+  <div class="background-image-cover"> </div>
+
+
 
 
 
@@ -287,10 +375,10 @@ line-height: 1.5rem;
 </div>
 
 
-	<div id="header">
+	<div id="headertitle">
 		 <!--<img src="images/ethanstudios.png" width="300" height="100"> -->
 		
-		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 1);width: 100%;font-weight:800;font-size:8vw;line-height: 2vw;white-space: nowrap;">Ethan's Train Game</p>
+		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 1);width: 100%;font-weight:800;font-size:8vw;line-height: 2vw;white-space: nowrap;margin-top:120px;margin-bottom:100px">Ethan's Train Game</p>
       
       
 
@@ -299,8 +387,8 @@ line-height: 1.5rem;
     </div>  
 
     <div id="header2" <p 
-style= "background-color:rgba(255, 255, 255, 0.0); ">
-      <p style="font-family:'RalewayRegular';color:rgba(0, 255, 255, 1);text-align:center"></p>  
+style= "background-color:rgba(0, 0, 0, 0.0); ">
+      <p style="font-family:'RalewayRegular';color:rgba(0, 255, 255, 1);text-align:center;margin-bottom:50px"></p>  
 	  
 		
 		<!--</a>-->
@@ -311,7 +399,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 				<p class="StandardText">from around the 1910s(approximately the time where (in my opinion) the rail network peaked)</p>
 		</div>
 		
-		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
+		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;margin-bottom:40px">
 			<u>
 				 empty space
 			</u>
@@ -323,7 +411,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 				<p class="StandardText">The game is still in early prototyping.</p>
 		</div>
 		
-		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
+		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;margin-bottom:40px">
 			<u>
 				 empty space
 			</u>
@@ -337,7 +425,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 			</a>
 		</div>
 		
-		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
+		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;margin-bottom:40px">
 			<u>
 				 empty space
 			</u>
@@ -349,7 +437,11 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 				<p class="StandardText">Things may change when/if the game is released.</p>
 		</div>
 		
-		
+		<p style="font-family:'RalewayRegular';color:rgba(245, 245, 245, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;margin-bottom:20px">
+			<u>
+				 empty space
+			</u>
+		</p>
 		<div style="clear:both"></div>
 		
 		<div class="row">
@@ -372,7 +464,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 		
 		<div style="clear:both"></div>
 		
-		<div>
+		<div style="margin-top:30px;margin-bottom:30px">
 			<p class="StandardText">Here are some short videos of the train moving.</p>
 			<p class="StandardText">shown from the side, they are set to loop.</p>
 		</div>
@@ -405,7 +497,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
 		
 		<div style="clear:both"></div>
 		
-		<div>
+		<div style="margin-top:30px;margin-bottom:30px">
 			<p class="StandardText">Here are some videos of the train moving.</p>
 			<p class="StandardText">Taken from a fixed point.</p>
 		</div>
@@ -506,7 +598,7 @@ style= "background-color:rgba(255, 255, 255, 0.0); ">
     
 	
 	<div>
-      <p class="StandardText" style="line-height:1.5vw;white-space: nowrap;">All Rights Reserved (c) Ethan Stockton 2017 - 2024</p>
+      <p class="StandardText" style="line-height:1.5vw;white-space: nowrap;">All Rights Reserved (c) Ethan Stockton 2017 - 2025</p>
 	</div>
 	
  </div>  
